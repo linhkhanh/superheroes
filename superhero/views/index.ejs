@@ -1,0 +1,22 @@
+<head>
+    <meta charset="utf-8">
+    <title>Superhero</title>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+<script src="/app.js"></script>
+    <link rel ="stylesheet" type ="text/css" href ="/main.css" />
+</head>
+<body>
+    <h1>Wonderful Superheros !!!</h1>
+    <img src="https://www.aaglobal.com/images/WAR11FOL-stickers_L.jpg" class="dc">
+    <img src="https://partycity6.scene7.com/is/image/PartyCity/_pdp_sq_?$_1000x1000_$&$product=PartyCity/860055_01" class="marvel"> 
+    <ul>
+        <% for(let i = 0; i < superheroes.length; i++) { %>
+            <li class="list">
+                <a href="/superheroes/<%=i%>"><%=superheroes[i].name %></a>
+            </li>
+        <% } %>
+    </ul>
+    <a href="/" class="back"> << Back</a>
+</body>
+</html>
