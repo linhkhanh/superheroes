@@ -10,7 +10,7 @@
     <link rel ="stylesheet" type ="text/css" href ="/show.css" />
 </head>
 <body>
-    <a href="/superheroes" class="back"> <- Back</a>
+    <div class="back"><a href="/superheroes"> <- Back</a></div>
     <h1><%=hero.name; %></h1>
     <div class="info">
     <div class="container">
@@ -47,7 +47,7 @@
       </div>
       <ul>
         <% for(let i = 0; i < hero.powers.length; i++) { %>
-            <li class="power">
+            <li>
                 &#9732; <%=hero.powers[i].charAt(0).toUpperCase() + hero.powers[i].slice(1) %>
             </li>
         <% } %>

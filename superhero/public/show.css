@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 body {
     background-image: url('https://scx2.b-cdn.net/gfx/news/hires/2018/universe.jpg');
     color: white;
@@ -14,25 +15,34 @@ body {
 .info {
     width: 70%;
     margin: auto;
+    border: 4px dashed whitesmoke;
+    height: 700px;
+    padding: 3%;
+    border-radius: 10px;
 
 }
-.power {
-    text-align: left;
+ul {
+    margin-left: 50%;
 }
 li {
     font-family: 'Quantico', sans-serif;
     list-style: none;
-    margin: 2% auto;
+    margin: 5%;
+    text-align: left;
 }
 
 .back {
-    color: white;
     margin-top: 2%;
 }
-.back:hover {
-    text-shadow: 2px 2px 4px #000000;
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+a:hover {
+    text-shadow: 2px 2px 4px whitesmoke;
 }
 h1 {
     margin: 4% auto;
-    font-size: 40px
+    font-size: 40px;
+    font-family: 'Bungee Outline', cursive;
 }

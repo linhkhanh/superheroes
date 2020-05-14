@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quantico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap');
 body {
     font-family: 'Press Start 2P', cursive;
     text-align: center;
@@ -8,7 +9,8 @@ body {
 }
 h1 {
     margin: 4% auto;
-    font-size: 40px
+    font-size: 40px;
+    font-family: 'Bungee Outline', cursive;
 }
 li {
     font-family: 'Quantico', sans-serif;
