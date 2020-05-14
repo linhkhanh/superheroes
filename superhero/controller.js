@@ -8,7 +8,13 @@ const indexPage = (req, res) => {
 };
 
 const showPage = (req, res) => {
-    res.render('show.ejs', { hero: superheroes[req.params.index] });
+    let index = req.params.index;
+    if(isNaN(index) || index >= superheroes.length ) {
+        res.send(`Your input is not valid. It should be larger than 0 and less than ${superheroes.length}`)
+    } else {
+        res.render('show.ejs', { hero: superheroes[req.params.index] });
+    }
+    
 }
 
 module.exports = {
